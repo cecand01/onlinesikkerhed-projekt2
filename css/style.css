@@ -10,6 +10,47 @@ background-color: #EAE0D5;
 color: #22333B;
 }
 
+/*Navigation*/
+nav #bars {
+        display: flex;
+        background-color: transparent;
+        color: brown;
+        font-size: 2.3em;
+        border: none;
+        cursor: pointer;
+    }
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.navigation ul{
+    display: none;
+    height: auto;
+    border-top: 4px solid brown;
+    flex-direction: column;
+}
+
+.navigation li{
+    display: flex;
+}
+
+.navigation .show{
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    background-color: beige;
+    z-index: 1;
+}
+
+
 
 /*Header*/
 header {
@@ -32,42 +73,6 @@ header {
 
 }
 
-.dropdown{
-    display: inline-block;
-    align-items: center;
-    gap: 1rem;
-    margin: 0 1rem 0 auto;
-    text-decoration: none;
-}
-
-.dropdown button {
-    cursor: pointer;    
-    border: none;
-    padding: 10px 15px;
-    background-color: #22333B;
-    color: #EAE0D5;
-    display: block;
-}
-
-
-.dropdown a {
-    display: block;
-    color: #EAE0D5;
-    text-decoration: none;
-    padding: 10px 15px;
-}
-
-.dropdown .ikon-container {
-    position: absolute;
-    background-color: #22333B;
-    color: #EAE0D5;
-    min-width: 100px;
-}
-
-.dropdown:hover .ikon-container{
-    display:block;
-
-}
 
 
 
@@ -134,4 +139,34 @@ footer{
 
 }
 
-@media screen and {max-width: 768px;}
+
+/*Desktopversion*/
+@media screen and (min-width: 768px) {
+    .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    }
+
+    .navigation ul{
+        display: flex; /*for at sætte elementerne op ved siden af hinanden*/
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        list-style-type: none;
+        border-top: none;
+    }
+
+    .navigation a{
+        text-decoration: none;
+        font-size: 20px;
+        color: darkgray;
+        padding: 0.5em;
+    }
+
+    nav #bars{
+        display: none; /*Fjerner hamburger menu ikon fra desktop version*/
+
+    }
+}

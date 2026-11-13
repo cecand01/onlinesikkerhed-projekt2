@@ -14,23 +14,20 @@
 
 <body>
     <header>
-        <div class="logo">
+        <nav class="navigation">
             <a href="index.html" class="logo">
-            <img src="img/Logo.png" alt="Sikker Online logo">
+                <img src="img/Logo.png" alt="Sikker Online logo">
             </a>
-        </div>
 
-        <nav class="dropdown">
-            <button>Menu</button>
-            <div>
-                <ul class="dropdown">
-                    <li><a href="spotonlinesvindel.html">Spot online svindel</a></li>
-                    <li><a href="shopsikkert.html">Shop sikkert</a></li>
-                    <li><a href="aisikkerhed.html">AI sikkerhed</a></li>
-                    <li><a href="kontakt.html">Kontakt os</a></li>
-                </ul></a>
-            </div>
+            <button id="bars" aria-expanded="false" aria-controls="menu" aria-label="åben menu">
+                <i class="fa-solid fa-bars"></i>
             </button>
+            <ul id="menu">
+                <li><a href="spotonlinesvindel.html">Spot online svindel</a></li>
+                <li><a href="shopsikkert.html">Shop sikkert</a></li>
+                <li><a href="aisikkerhed.html">AI sikkerhed</a></li>
+                <li><a href="kontakt.html">Kontakt os</a></li>
+            </ul>
         </nav>
     </header>
 
