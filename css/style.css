@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: inter, sans-serif;
+}
+
+
+body {
+background-color: #EAE0D5;
+color: #22333B;
+}
+
+
+/*Header*/
+header {
+    background-color: #22333B;
+    display: flex;
+    align-items: center;
+    color: #EAE0D5;
+    text-decoration: none;
+    padding: 0;
+    width: 100%;  
+    margin-bottom: 10px;
+} 
+
+
+.logo img {
+    width: 100px;
+    display: block;
+    margin: 0.5em;
+    float: start;
+
+}
+
+.dropdown{
+    display: inline-block;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 1rem 0 auto;
+    text-decoration: none;
+}
+
+.dropdown button {
+    cursor: pointer;    
+    border: none;
+    padding: 10px 15px;
+    background-color: #22333B;
+    color: #EAE0D5;
+    display: block;
+}
+
+
+.dropdown a {
+    display: block;
+    color: #EAE0D5;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .ikon-container {
+    position: absolute;
+    background-color: #22333B;
+    color: #EAE0D5;
+    min-width: 100px;
+}
+
+.dropdown:hover .ikon-container{
+    display:block;
+
+}
+
+
+
+/*Forside*/
+
+
+
+/*Main*/
+
+.brødkrumme {
+    padding: 0.3em 0.5em;
+    background-color: #22333B;
+}
+main img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+    height: 450px;
+
+}
+
+h1,h2 {
+    color: #22333B;
+    text-align: left;
+    padding: 10px 10px;
+    margin: 20px 20px;
+}
+
+
+.ikon-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.tekst.img{
+    background-color: #EAE0D5;
+    color: #22333B;
+    gap: 1em;
+    display: flex;
+    text-decoration: none;
+}
+
+article img {
+    max-width: 30%;
+    gap: 1em;
+    display: flex;
+}
+
+aside img {
+    width: 30%;
+    gap: 1em;
+    display: inline-flex;
+}
+
+
+footer{
+    background-color: #22333B;
+    color: #EAE0D5;
+    width: 100%;
+
+}
+
+@media screen and {max-width: 768px;}
