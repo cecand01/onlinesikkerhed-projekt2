@@ -50,6 +50,28 @@ nav #bars {
     cursor: pointer;
 }
 
+
+/*Når burgermenuen åbnes*/
+ul #menu.active {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*De forskellige menukategorier*/
+nav #menu a {
+    color: #EAE0D5;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+nav #menu a:hover {
+    color: #D4A373;
+}
+
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -76,10 +98,9 @@ nav #bars {
     left: 0;
     padding: 0;
     width: 100%;
-    background-color: beige;
+    background-color: #20343B;
     z-index: 1;
 }
-
 
 
 /*Forside - main*/
@@ -100,7 +121,7 @@ h1 {
     color: #22333B;
     text-align: left;
     padding: 0px 10px;
-    margin: 10px 0px 0px 10px;
+    margin: 10px;
     flex-direction: column;
     font-size: 1.5em;
     font-weight: 600;
@@ -118,9 +139,9 @@ h2 {
 
 h3 {
     color: #22333B;
-    text-align: left;
+    text-align: center;
     padding: 0px 10px;
-    margin: 10px 20px 20px 10px;
+    margin: 10px;
     flex-direction: column;
     font-size: 0,2em;
 }
@@ -132,8 +153,8 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px 20px;
     max-width: 500px;
-    margin: 40px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .kategori {
@@ -186,69 +207,81 @@ h3 {
     color: #ffffff;
 }
 
-/* Mobil */
+/*Afsnit med artikler*/
 
-@media (max-width: 400px) {
-
-    .categories {
-        gap: 30px 15px;
-        padding: 10px;
-    }
-
-    .circle {
-        width: 145px;
-        height: 145px;
-        border-width: 7px;
-    }
-
-    .circle h3 {
-        font-size: 13px;
-    }
-
-    .circle img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .read-more {
-        font-size: 15px;
-        padding: 10px;
-    }
+.artikler h3 {
+    font-size: 1em;
+    font-weight: 300;
+    font-style: italic;
+    color: #222;
+    margin: 0;
+    text-align: start;
+    padding: 5% 0% 2% 10%;
 }
-*/
 
-
-
-
-
-.tekst.img{
-    background-color: #EAE0D5;
-    color: #22333B;
-    gap: 1em;
+.artikler h4 {
+    font-size: 1em;
+    font-weight: 600;
+    color: #222;
+    margin: 0;
+    text-align: left; 
+    padding: 0% 10% 0% 10%;
+    
+}
+.artikler img {
     display: flex;
-    margin: 10;
-    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2% 10% 0% 10%;
 }
 
-article img {
-    max-width: 30%;
-    gap: 1em;
-    display: flex;
+.artikel-img-1 {
+    font-size: 0.9em;
+    font-weight: 50;
+    color: #20343B;
+    margin: 0;
+    text-align: left; 
+    padding: 0% 10% 5% 10%; 
 }
 
-aside img {
-    width: 30%;
-    gap: 1em;
-    display: inline-flex;
+h4 {
+    font-size: 1em;
+    font-weight: 600;
+    color: #20343B;
+    margin: 0;
+    text-align: left; 
+    padding: 2% 0% 0% 10%;
+}
+
+.artikel-img-2 {
+    font-size: 0.9em;
+    font-weight: 50;
+    color: #222;
+    margin: 0;
+    text-align: left; 
+    padding: 0% 10% 5% 10%; 
 }
 
 
-footer{
+
+/*Footer*/
+footer {
     background-color: #22333B;
+    display: flex;
+    align-items: center;
     color: #EAE0D5;
-    width: 100%;
+    text-decoration: none;
+    padding: 0;
+    width: 100%;  
+    margin:0;
+    flex-direction: row;
 
 }
+
+
+
 
 
 /*Desktopversion*/
