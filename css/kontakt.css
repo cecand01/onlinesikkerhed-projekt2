@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: inter, sans-serif;
+}
+
+/*Mobilversion*/
+
+
+/*Body*/
+body {
+background-color: #EAE0D5;
+color: #22333B;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Header*/
+header {
+    background-color: #22333B;
+    display: flex;
+    align-items: center;
+    color: #EAE0D5;
+    text-decoration: none;
+    padding: 0;
+    width: 100%;  
+    margin:0;
+} 
+
+
+/*Navigation - burgermenu*/
+.logo img {
+    width: 100px;
+    display: block;
+    margin: 0.5em;
+    float: start;
+    margin: 0;
+
+}
+
+nav #bars {
+    display: flex;
+    background-color: transparent;
+    color: #EAE0D5;
+    font-size: 2.3em;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*Når burgermenuen åbnes*/
+ul #menu.active {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*De forskellige menukategorier*/
+nav #menu a {
+    color: #EAE0D5;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+nav #menu a:hover {
+    color: #D4A373;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0%;
+}
+
+.navigation ul {
+    display: none;
+    height: auto;
+    border-top: 4px solid #22333B;
+    flex-direction: row;
+}
+
+.navigation li {
+    display: flex;
+}
+
+.navigation .show {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #20343B;
+    z-index: 1;
+}
+
+
+/*Forside - main*/
+
+.brødkrummesti {
+    display: none;
+}
+
+.forside-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    order: 0;
+    /*BESKÆR BILLEDET SÅ DET IKKE ER SÅ HØJT*/
+}
+
+h1 {
+    color: #22333B;
+    text-align: left;
+    padding: 0px 10px;
+    margin: 10px;
+    flex-direction: column;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h2 {
+    color: #22333B;
+    text-align: left;
+    padding: 0px 10px;
+    margin: 10px 20px 20px 10px;
+    flex-direction: column;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+h3 {
+    color: #22333B;
+    text-align: center;
+    padding: 0px 10px;
+    margin: 10px;
+    flex-direction: column;
+    font-size: 0,2em;
+}
+
+
+/*Kategorier*/
+.kategori-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 20px;
+    max-width: 500px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.kategori {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.cirkel {
+    width: 185px;
+    height: 185px;
+    border: 9px solid #20343B;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-sizing: border-box;
+}
+
+.cirkel h3 {
+    font-size: 16px;
+    color: #222;
+    margin: 0;
+    text-align: center;
+}
+
+.cirkel img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+/*CTA knapper*/
+.læs-mere {
+    background-color: #E79535;
+    color: #20343B;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 13px 10px;
+    border-radius: 13px;
+    transition: 0.3s;
+}
+
+.læs-mere:hover {
+    background-color: #20343B;
+    color: #ffffff;
+}
+
+/*Afsnit med artikler*/
+
+.artikler h3 {
+    font-size: 1em;
+    font-weight: 300;
+    font-style: italic;
+    color: #222;
+    margin: 0;
+    text-align: start;
+    padding: 5% 0% 2% 10%;
+}
+
+.artikler h4 {
+    font-size: 1em;
+    font-weight: 600;
+    color: #222;
+    margin: 0;
+    text-align: left; 
+    padding: 0% 10% 0% 10%;
+    
+}
+.artikler img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2% 10% 0% 10%;
+}
+
+.artikel-img-1 {
+    font-size: 0.9em;
+    font-weight: 50;
+    color: #20343B;
+    margin: 0;
+    text-align: left; 
+    padding: 0% 10% 5% 10%; 
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 600;
+    color: #20343B;
+    margin: 0;
+    text-align: left; 
+    padding: 2% 0% 0% 10%;
+}
+
+.artikel-img-2 {
+    font-size: 0.9em;
+    font-weight: 50;
+    color: #222;
+    margin: 0;
+    text-align: left; 
+    padding: 0% 10% 5% 10%; 
+}
+
+
+
+/*Footer*/
+.footer {
+    background-color: #22333B;
+    color: #EAE0D5;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.so-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.so-me h3 {
+    width: 100%;
+    color: #EAE0D5;
+}
+
+.so-me a {
+    color: #E79535;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.so-me a:hover {
+    transform: scale(1.2);
+}
+
+.so-me img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    color: #EAE0D5;
+}
+
+.genveje ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.genveje li {
+    margin-bottom: 10px;
+}
+
+.genveje a {
+    color: #EAE0D5;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.genveje a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.footer-info p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.rettigheder {
+    border-top: 1px solid #EAE0D5;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/*Desktopversion*/
+@media screen and (min-width: 768px) {
+    .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    }
+
+    .navigation ul{
+        display: flex; /*for at sætte elementerne op ved siden af hinanden*/
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        list-style-type: none;
+        border-top: none;
+    }
+
+    .navigation a{
+        text-decoration: none;
+        font-size: 20px;
+        color: darkgray;
+        padding: 0.5em;
+    }
+
+    nav #bars{
+        display: none; /*Fjerner hamburger menu ikon fra desktop version*/
+
+    }
+}
