@@ -35,20 +35,18 @@
                 
                                 
                 <h1>Kontakt</h1>
-                <h2>scam</h2>
-                <img src="img/Forside billede.jpg" alt="Forside billede">
+                <h2></h2>
+                <img src="img/#" alt="Forside billede">
             </div>
         </section>
 
 
         <section >
             <div>
-                <h2>På denne hjemmeside kan du lære hvordan du sikre dig selv online</h2>
-                <h3>Læs mere om vores hovedpunkter for at beskytte dig selv</h3>
+                <h2></h2>
+                <h3></h3>
             <nav class="ikon-container">
-                 <li><a href="spotonlinesvindel.html"></a>Shopping scam</li>
-                 <li><a href="ai.html"></a>AI kritisk</li>
-                 <li><a href="kontakt.html"></a>Personlige oplysninger tyveri</li>
+        
             </nav>
             </div>
         </section>
@@ -57,35 +55,117 @@
         <section class="Artikel">
             <div>
                 <article> 
-                <h3>Artikel - Få viden om hvordan du beskytter dine private oplysninger</h3> 
-                <img src="img/Artikel 1 - mobil skærm med SoMe ikoner.jpg" alt="Billede af en smartphone der viser forskellige SoMe apps" >
-                <p>Billede af en smartphone der viser forskellige So Me apps</p>
-                </article>
-
-                <aside> 
-                <h3>Artikel - Ai eller ægte</h3> 
-                <img src="img/pexels-tara-winstead-8849295.png" alt="Billede af et ai genereret billede med klisterøjne på" >
-                <p>Billede af en tegnet person med hobby øjne</p></aside>
-
+                <h3></h3> 
+              
             </div>
         </section>   
     </main>  
 
+<form>
+			<label for="navn">Navn</label> <!--'for' knyttes til <input> med id af samme navn -->
+			<input id="navn" type="text" required>
+			
+			<label for="adresse">Adresse</label><!--class="visually-hidden" kan bruges når man ønsker at bruge placeholder i input istedet for label, men stadig ønsker at have en tilgængelig mulighed som kan læses af en skærmlæser-->
+			<input id="adresse" type="text">
+			
+			<label for="telefon">Telefonnummer</label>
+			<input id="telefon" type="tel">
+			
+			<label for="mail">E-mail</label>
+			<input id="mail" type="email" required>
+
+			<div class="custom-select">
+				<label for="region">Region</label>
+				<select id="region" name="select">
+					<option value="0" selected disabled>Vælg region</option> <!--Denne gør at der ikke autovælges en region for brugeren-->
+					<option value="1">Syddanmark</option>
+					<option value="2">Sjælland</option>
+					<option value="3">Hovedstaden</option>
+					<option value="4">Nordjylland</option>
+					<option value="5">Midtjylland</option>
+				</select>
+			</div>
+
+			<fieldset class="checkbox"> <!--Checkbox giver muligheden for at vælge flere 'services' på en gang. -->
+				<legend>Hvilke services ønsker du tilbud på?</legend>
+				<div>
+					<input type="checkbox" name="services" id="rengøring" value="Rengøring">
+					<label for="rengøring">Rengøring</label>
+				</div>
+					
+				<div>
+					<input type="checkbox" name="services" id="vinduespudser" value="Vinduespudser">
+					<label for="vinduespudser">Vinduespudser</label>
+				</div>
+					
+				<div>
+					<input type="checkbox" name="services" id="bilrengoring" value="Bilrengøring">
+					<label for="bilrengoring">Bilrengøring</label>
+				</div>
+					
+				<div>
+					<input type="checkbox" name="services" id="havearbejde" value="Havearbejde">
+					<label for="havearbejde">Havearbejde</label>
+				</div>
+			</fieldset>
+				
+			<label for="besked">Besked</label>
+			<textarea name="besked" id="besked" rows="8" cols="60"></textarea> <!--Textarea giver mulighed for at skrive en større besked. Størrelse defineres ved brug af rows og cols-->	
+				
+			<fieldset> <!-- <fieldset> grupperer relaterede elementer i en form. Den tilføjer endvidere en streg rundt om de relaterede elementer. <legend> definere en titel/caption for en fieldsetgruppe-->
+				<legend>Må vi kontakte dig på din telefon?</legend>
+				<!--radiobutton skal have samme 'name' for at der kun kan vælges en knap og denne kan ses som værende en gruppe-->
+				<input id="ja" type="radio" value="ja" name="kontaktes">
+				<label for="ja">Ja</label>
+				
+				<input id="nej" type="radio" value="nej" name="kontaktes">
+				<label for="nej">Nej</label>
+			</fieldset>
+				
+			<input type="submit" name="submit" value="Send">
+		
+		</form>
 
 
-    <footer>
-        <div>
-            <article>
-            <nav>
-                <li><a href="Facebook"></a>Facebook</li>
-                <li><a href="Instagram"></a>Instagram</li>
-                <li><a href="LinkIn"></a>LinkIn</li>
-                <p>© 2026 online sikkerhed rettigheder</p>
-            </nav>
-                
-            </article>
+
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer so-me">
+            <h3>Følg os</h3>
+            <a href="https://www.facebook.com/?locale=da_DK" aria-label="Facebook">
+                <img src="img/facebook-brands-solid.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+                <img src="img/instagram-brands-solid.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/home"><img src="img/linkedin-in-brands-solid.png" alt="Instagram"></a>
         </div>
-    </footer>
+
+        <div class="footer genveje">
+            <ul>
+                <li><a href="/omos.html">Om os</a></li>
+                <li><a href="/kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-info">
+            <h3>Online sikkerhed</h3>
+            <p>Bliv klogere på online sikkerhed.</p>
+        </div>
+
+    </div>
+
+    <div class="rettigheder">
+        <p>© 2026 Online Sikkerhed.</p>
+    </div>
+</footer>
+
+    
 <script>lucide.createIcons();</script>    
 </body>
 </html>

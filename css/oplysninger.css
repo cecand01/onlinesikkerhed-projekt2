@@ -139,7 +139,7 @@ h2 {
 
 h3 {
     color: #22333B;
-    text-align: center;
+    text-align: left;
     padding: 0px 10px;
     margin: 10px;
     flex-direction: column;
@@ -265,8 +265,7 @@ h4 {
 }
 
 
-
-/*Footer*/
+/* FOOTER */
 .footer {
     background-color: #22333B;
     color: #EAE0D5;
@@ -274,50 +273,46 @@ h4 {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0;
-    padding: 20px;
-}
+    text-align: center;
+    gap: 15px;
+    }
 
 
 .footer h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 400;
+    margin: 0 0 8px;
 }
 
+/* Sociale medier */
 .so-me {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    text-align: center;
+    margin: 0;
 }
 
 .so-me h3 {
-    width: 100%;
     color: #EAE0D5;
 }
 
 .so-me a {
-    color: #E79535;
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-}
-
-.so-me a:hover {
-    transform: scale(1.2);
 }
 
 .so-me img {
     width: 30px;
     height: 30px;
     object-fit: contain;
-    color: #EAE0D5;
+
+    /* Lys orange ikoner */ 
+    filter: brightness(0) saturate(100%)
+    invert(65%) sepia(60%) saturate(700%)
+    hue-rotate(345deg);
+    transition: 0.3s;
 }
 
 .genveje ul {
@@ -327,7 +322,7 @@ h4 {
 }
 
 .genveje li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .genveje a {
@@ -337,21 +332,26 @@ h4 {
 }
 
 .genveje a:hover {
-    text-decoration: underline;
-    opacity: 0.8;
+    color: #E79535;
 }
 
 .footer-info p {
     font-size: 14px;
     line-height: 1.6;
+    margin: 10px;
+}
+
+.footer-info h3{
+    display: none;
 }
 
 .rettigheder {
     border-top: 1px solid #EAE0D5;
-    padding-top: 15px;
+    padding: 15px;
     text-align: center;
     font-size: 13px;
 }
+
 
 
 /*Desktopversion*/
