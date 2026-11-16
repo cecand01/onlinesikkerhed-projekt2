@@ -5,8 +5,6 @@
 }
 
 /*Mobilversion*/
-
-
 /*Body*/
 body {
 background-color: #EAE0D5;
@@ -104,9 +102,8 @@ nav #menu a:hover {
 
 
 /*Forside - main*/
-
 .brødkrummesti {
-    display: none;
+    display: flex;
 }
 
 .forside-img {
@@ -114,7 +111,6 @@ nav #menu a:hover {
     object-fit: cover;
     object-position: center;
     order: 0;
-    /*BESKÆR BILLEDET SÅ DET IKKE ER SÅ HØJT*/
 }
 
 h1 {
@@ -147,193 +143,7 @@ h3 {
 }
 
 
-/*Kategorier*/
-.kategori-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px 20px;
-    max-width: 500px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.kategori {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-}
-
-.cirkel {
-    width: 185px;
-    height: 185px;
-    border: 9px solid #20343B;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    box-sizing: border-box;
-}
-
-.cirkel h3 {
-    font-size: 16px;
-    color: #222;
-    margin: 0;
-    text-align: center;
-}
-
-.cirkel img {
-    width: 75px;
-    height: 75px;
-    object-fit: contain;
-}
-
-/*CTA knapper*/
-.læs-mere {
-    background-color: #E79535;
-    color: #20343B;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 13px 10px;
-    border-radius: 13px;
-    transition: 0.3s;
-}
-
-.læs-mere:hover {
-    background-color: #20343B;
-    color: #ffffff;
-}
-
-/*Afsnit med artikler*/
-
-.artikler h3 {
-    font-size: 1em;
-    font-weight: 300;
-    font-style: italic;
-    color: #222;
-    margin: 0;
-    text-align: start;
-    padding: 5% 0% 2% 10%;
-}
-
-.artikler h4 {
-    font-size: 1em;
-    font-weight: 600;
-    color: #222;
-    margin: 0;
-    text-align: left; 
-    padding: 0% 10% 0% 10%;
-    
-}
-.artikler img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 2% 10% 0% 10%;
-}
-
-.artikel-img-1 {
-    font-size: 0.9em;
-    font-weight: 50;
-    color: #20343B;
-    margin: 0;
-    text-align: left; 
-    padding: 0% 10% 5% 10%; 
-}
-
-h4 {
-    font-size: 1em;
-    font-weight: 600;
-    color: #20343B;
-    margin: 0;
-    text-align: left; 
-    padding: 2% 0% 0% 10%;
-}
-
-.artikel-img-2 {
-    font-size: 0.9em;
-    font-weight: 50;
-    color: #222;
-    margin: 0;
-    text-align: left; 
-    padding: 0% 10% 5% 10%; 
-}
-
-@charset "UTF-8";
-/* CSS Document */
-
-/*Generel styling*/
-
-* { /*alt på siden bliver påvirket*/
-	box-sizing: border-box; /*Padding og border inkluderes i bredde og højde*/
-}
-
-body {
-	font-family: Arial, Helvetica, sans-serif;
-	margin: 0 0 5em 0; /*Resetting af margin i hele bodyen + tilføjer luft under kontaktformular*/
-}
-
-h1, h2, h3, h4, h5, h6{
-	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-}
-
-h1{
-	text-transform: uppercase; /*Teksten transformeres til udelukkende at være store bogstaver*/
-}
-
-.kontakt-tekst{
-	font-weight: 200;
-	font-size: 22px;
-}
-
-
-/*Navigation start*/
-header{
-	background-color: #333;
-	height: 5em;
-	padding: 1em;
-	margin-bottom: 4em;	
-}
-
-.logo img{
-	height: 50px;
-	width: auto;
-}
-
-nav ul{
-	float: right;
-	list-style-type: none;
-}
-
-nav li {
-	display: inline-block;
-}
-
-nav li a {
-	text-decoration: none;
-	padding: 1em;
-	font-size: 20px;
-	color:#fff;
-	text-transform: uppercase;
-}
-
-nav a:hover{
-	color: #DD7824;
-	transition: 0.5s; /*skaber en mere blød overgang mellem linkfarverne*/
-}
-
-main{
-    padding: 0 2em 2em;
-}
-
-
 /*Kontaktform*/
-
 input[type=text], input[type=email],input[type=tel], select, textarea { /*vælger de emner/typer som skal berøres af nedenstående css*/
   width: 100%;
   padding: 1em;
