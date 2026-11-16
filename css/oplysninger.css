@@ -5,8 +5,6 @@
 }
 
 /*Mobilversion*/
-
-
 /*Body*/
 body {
 background-color: #EAE0D5;
@@ -58,7 +56,6 @@ ul #menu.active {
 
 }
 
-/*De forskellige menukategorier*/
 nav #menu a {
     color: #EAE0D5;
     text-decoration: none;
@@ -70,7 +67,6 @@ nav #menu a {
 nav #menu a:hover {
     color: #D4A373;
 }
-
 
 .navigation {
     display: flex;
@@ -114,7 +110,6 @@ nav #menu a:hover {
     object-fit: cover;
     object-position: center;
     order: 0;
-    /*BESKÆR BILLEDET SÅ DET IKKE ER SÅ HØJT*/
 }
 
 h1 {
@@ -142,11 +137,54 @@ h3 {
     text-align: left;
     padding: 0px 10px;
     margin: 10px;
-    flex-direction: column;
+    flex-direction: column
     font-size: 0,2em;
 }
 
 
+/*Kategorier*/
+.kategori-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.kategori {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cirkel {
+    width: 100%;
+    max-width: 150px;
+    aspect-ratio: 1 / 1;
+    border: 3px solid #20343B;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.cirkel h3 {
+    font-size: 14px;
+    color: #20343B;
+    margin: 0;
+    text-align: center;
+}
+
+.cirkel img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
 
 /* FOOTER */
 .footer {
@@ -170,7 +208,6 @@ h3 {
     margin: 0 0 8px;
 }
 
-/* Sociale medier */
 .so-me {
     text-align: center;
     margin: 0;
@@ -267,3 +304,14 @@ h3 {
 
     }
 }
+
+.kategori-container {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 850px;
+        gap: 25px;
+    }
+
+    .cirkel {
+        max-width: 180px;
+        border-width: 4px;
+    }
