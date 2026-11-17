@@ -143,43 +143,7 @@ h3 {
 }
 
 
-.guide {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin: 20px;
-    padding: 15px;
-}
 
-.guides {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-}
-
-
-.guides img {
-    width: 35px;
-    height: 35px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-
-.guide-tekst h2 {
-    color: #22333B;
-    font-size: 18px;
-    margin: 0 0 8px;
-}
-
-.guide-tekst p {
-    color: #22333B;
-    font-size: 15px;
-    line-height: 1.5;
-    margin: 0;
-}
-
-/* Undersidebillede */
 .underside-billede {
     width: 100%;
     height: auto;
