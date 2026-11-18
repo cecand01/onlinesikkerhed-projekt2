@@ -5,8 +5,6 @@
 }
 
 /*Mobilversion*/
-
-
 /*Body*/
 body {
 background-color: #EAE0D5;
@@ -51,7 +49,6 @@ nav #bars {
 }
 
 
-/*Når burgermenuen åbnes*/
 ul #menu.active {
     display: flex;
     flex-direction: column;
@@ -206,7 +203,6 @@ h3 {
 }
 
 /*Afsnit med artikler*/
-
 .artikler h3 {
     font-size: 1em;
     font-weight: 300;
@@ -307,7 +303,7 @@ h4 {
     height: 30px;
     object-fit: contain;
 
-    /* Lys orange ikoner */ 
+    /* Lys orange ikoner som jeg har fået hjælp af chatgpt til at kode */ 
     filter: brightness(0) saturate(100%)
     invert(65%) sepia(60%) saturate(700%)
     hue-rotate(345deg);
@@ -355,31 +351,195 @@ h4 {
 
 /*Desktopversion*/
 @media screen and (min-width: 768px) {
-    .navigation{
+
+body {
+    font-size: 16px;
+}
+
+/*Header*/
+header {
+    padding: 10px 5%;
+}
+
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
-    }
+    max-width: 1400px;
+    margin: auto;
+}
 
-    .navigation ul{
-        display: flex; /*for at sætte elementerne op ved siden af hinanden*/
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-        list-style-type: none;
-        border-top: none;
-    }
+.logo img {
+    width: 130px;
+}
 
-    .navigation a{
-        text-decoration: none;
-        font-size: 20px;
-        color: darkgray;
-        padding: 0.5em;
-    }
+nav #bars {
+    display: none;
+}
 
-    nav #bars{
-        display: none; /*Fjerner hamburger menu ikon fra desktop version*/
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+    border: none;
+}
 
-    }
+.navigation li {
+    display: flex;
+}
+
+nav #menu a {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.brødkrummesti {
+    display: block;
+    margin: 25px 5%;
+    font-size: 14px;
+}
+
+.forside-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 15px 15px 25px 25px;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+/*Main*/
+.kategori-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+.kategori {
+    align-items: center;
+}
+
+.cirkel {
+    width: 210px;
+    height: 210px;
+    border-width: 10px;
+}
+
+.cirkel img {
+    width: 90px;
+    height: 90px;
+}
+
+.cirkel h3 {
+    font-size: 18px;
+}
+
+
+.læs-mere {
+    display: inline-block;
+    padding: 14px 25px;
+}
+
+
+/* ARTIKLER - DESKTOP */
+
+.artikler {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1400px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+/* Overskrift */
+.artikler h3 {
+    font-size: 1.4em;
+    font-weight: 200;
+    font-style: italic;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+/* Artikeloverskrifter */
+.artikler h4 {
+    font-size: 1em;
+    padding: 10px 0;
+}
+
+/* Artikelbilleder */
+.artikler img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    padding: 0;
+}
+
+/* Billedtekster */
+.artikel-img-1,
+.artikel-img-2 {
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 10px 0 20px;
+}
+/* FOOTER */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    text-align: left;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.footer h3 {
+    text-align: left;
+    font-size: 18px;
+}
+
+.so-me {
+    text-align: left;
+}
+
+.genveje ul {
+    padding: 0;
+}
+
+.footer-info h3 {
+    display: block;
+    color: #EAE0D5;
+}
+
+.footer-info p {
+    margin: 10px 0;
+}
+
+.rettigheder {
+    padding: 20px;
+}
+
 }

@@ -252,31 +252,137 @@ h3 {
 
 /*Desktopversion*/
 @media screen and (min-width: 768px) {
-    .navigation{
+
+/* BODY */
+body {
+    font-size: 16px;
+}
+
+
+/* HEADER */
+header {
+    padding: 10px 5%;
+}
+
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
-    }
+    max-width: 1400px;
+    margin: auto;
+    padding: 10px 20px;
+}
 
-    .navigation ul{
-        display: flex; /*for at sætte elementerne op ved siden af hinanden*/
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-        list-style-type: none;
-        border-top: none;
-    }
+.logo img {
+    width: 130px;
+}
 
-    .navigation a{
-        text-decoration: none;
-        font-size: 20px;
-        color: darkgray;
-        padding: 0.5em;
-    }
+nav #bars {
+    display: none;
+}
 
-    nav #bars{
-        display: none; /*Fjerner hamburger menu ikon fra desktop version*/
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    list-style: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
 
-    }
+.navigation li {
+    display: flex;
+}
+
+nav #menu a {
+    color: #EAE0D5;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav #menu a:hover {
+    color: #E79535;
+}
+
+.Brødkrummesti {
+    display: block;
+    margin: 25px 5%;
+    font-size: 14px;
+}
+
+.hovedindhold-img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+/* FOOTER */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    text-align: left;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 30px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Sociale medier */
+.so-me {
+    text-align: left;
+}
+
+.so-me h3 {
+    color: #EAE0D5;
+}
+
+.so-me img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* Genveje */
+.genveje ul {
+    padding: 0;
+    margin: 0;
+}
+
+.genveje li {
+    margin-bottom: 12px;
+}
+
+/* Footer information */
+.footer-info h3 {
+    display: block;
+    color: #EAE0D5;
+}
+
+.footer-info p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 10px 0;
+}
+
+/* Rettigheder */
+.rettigheder {
+    border-top: 1px solid #EAE0D5;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
 }
