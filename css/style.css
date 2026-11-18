@@ -395,17 +395,6 @@ nav #menu a {
     padding: 10px;
 }
 
-.brødkrummesti {
-    display: block;
-    margin: 25px 5%;
-    font-size: 14px;
-}
-
-.forside-img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-}
 
 h1 {
     font-size: 2.5em;
@@ -425,6 +414,12 @@ h2 {
 
 h3 {
     font-size: 1.3em;
+}
+
+.Brødkrummesti {
+    display: block;
+    margin: 25px 5%;
+    font-size: 14px;
 }
 
 /*Main*/
@@ -463,8 +458,6 @@ h3 {
 }
 
 
-/* ARTIKLER - DESKTOP */
-
 .artikler {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -474,7 +467,7 @@ h3 {
     padding: 20px;
 }
 
-/* Overskrift */
+
 .artikler h3 {
     font-size: 1.4em;
     font-weight: 200;
@@ -483,13 +476,13 @@ h3 {
     margin-left: 15px;
 }
 
-/* Artikeloverskrifter */
+
 .artikler h4 {
     font-size: 1em;
     padding: 10px 0;
 }
 
-/* Artikelbilleder */
+
 .artikler img {
     width: 100%;
     height: 350px;
@@ -497,14 +490,16 @@ h3 {
     padding: 0;
 }
 
-/* Billedtekster */
+
 .artikel-img-1,
 .artikel-img-2 {
     font-size: 1em;
     line-height: 1.5;
     padding: 10px 0 20px;
 }
-/* FOOTER */
+
+
+/*Footer*/
 .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -540,6 +535,4 @@ h3 {
 
 .rettigheder {
     padding: 20px;
-}
-
-}
+}}
