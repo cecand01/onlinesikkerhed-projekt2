@@ -9,7 +9,7 @@
 body {
 background-color: #EAE0D5;
 color: #22333B;
-margin: 0 0 5em 0;
+margin: 0;
 }
 
 img {
@@ -407,7 +407,7 @@ main {
     padding: 0 10px;
 }
 
-input[type=text], input[type=email],input[type=tel], select, textarea { /*vælger de emner/typer som skal berøres af nedenstående css*/
+input[type=text], input[type=email],input[type=tel], select, textarea { 
   width: 40%;
   padding: 10px;
   border: 1px solid #22333B;
@@ -421,7 +421,7 @@ input[type=text], input[type=email],input[type=tel], select, textarea { /*vælge
 select{
 	padding: 0.675em 6em 0.675em 1em;
 	appearance: none;
-	-webkit-appearance: none; /*appearance fjerne default udseende på dropdown*/
+	-webkit-appearance: none; 
 	cursor: pointer;
 }
 

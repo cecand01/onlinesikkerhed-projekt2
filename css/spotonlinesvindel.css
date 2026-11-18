@@ -152,7 +152,7 @@ h3 {
 
 
 
-/* FOOTER */
+/*Footer*/
 .footer {
     background-color: #22333B;
     color: #EAE0D5;
@@ -270,7 +270,6 @@ h3 {
         display: none; /*Fjerner hamburger menu ikon fra desktop version*/
 
     }
-}
 
     .guide-oversigt {
         gap: 35px;
@@ -292,3 +291,41 @@ h3 {
     .guide-tekst p {
         font-size: 17px;
     }
+
+    /*Footer*/
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    text-align: left;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.footer h3 {
+    text-align: left;
+    font-size: 18px;
+}
+
+.so-me {
+    text-align: left;
+}
+
+.genveje ul {
+    padding: 0;
+}
+
+.footer-info h3 {
+    display: block;
+    color: #EAE0D5;
+}
+
+.footer-info p {
+    margin: 10px 0;
+}
+
+.rettigheder {
+    padding: 20px;
+}}
