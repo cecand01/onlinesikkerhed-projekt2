@@ -101,7 +101,7 @@ nav #menu a:hover {
 
 
 /*Forside - main*/
-.brødkrummesti {
+.Brødkrummesti {
     display: none;
 }
 
@@ -141,7 +141,7 @@ h3 {
 }
 
 
-/*Kontaktform*/
+/*Kontaktform - hentet fra Nadias undervisning*/
 input[type=text], input[type=email],input[type=tel], select, textarea { /*vælger de emner/typer som skal berøres af nedenstående css*/
   width: 100%;
   padding: 1em;
@@ -175,14 +175,14 @@ select{
 .custom-select::before {
   border-left: var(--size) solid transparent;
   border-right: var(--size) solid transparent;
-  border-bottom: var(--size) solid black;
+  border-bottom: var(--size) solid #20343B;
   top: 48%;
 }
 
 .custom-select::after {
   border-left: var(--size) solid transparent;
   border-right: var(--size) solid transparent;
-  border-top: var(--size) solid black;
+  border-top: var(--size) solid #20343B;
   top: 63%;
 }
 
@@ -198,18 +198,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  background-color: #C16010;
-  transition: 0.5s;
- 
-}
-
-input[type=checkbox]{
-	margin: 0.8em 0;
-	cursor: pointer;
-}
-
-.checkbox{ /*margin på fieldset med class checkbox*/
+.checkbox{ 
 	margin: 0.8em 0;
 }
 
@@ -217,21 +206,17 @@ input[type=radio]{
 	cursor: pointer;
 }
 
-fieldset{
-	border-color: #DD7824;
-	border-style: dotted; /* Kontrollerer stregen rundt om fieldset - kan fjernes ved at bruge 'hidden'*/
-}
-
-::placeholder{ /*Tager fat i placeholder-tekst i inputfeltet*/
-	color:#333;
+::placeholder{ 
+	color:#20343B;
 }
 
 .kontaktform {
   border-radius: 5px;
-  background-color: #c5c5c5;
+  background-color: #EAE0D5;
+  color: #20343B;
   padding: 1.3em;
-  width: 50%;
-  margin: 0 auto; /*Centrerer elementet på siden*/
+  width: 100%;
+  margin: 0 auto; 
 }
 
 /*Andre style elementer*/
@@ -246,10 +231,6 @@ fieldset{
 	position: absolute;
 	width: 1px;
 }
-
-
-
-
 
 /* FOOTER */
 .footer {
@@ -273,7 +254,7 @@ fieldset{
     margin: 0 0 8px;
 }
 
-/* Sociale medier */
+
 .so-me {
     text-align: center;
     margin: 0;
@@ -346,13 +327,13 @@ fieldset{
 /* BODY */
 body {
     font-size: 16px;
-    
+    margin: 0;
 }
 
 
 /* HEADER */
 header {
-    padding: 10px 5%;
+    padding: 0;
 }
 
 .navigation {
@@ -400,29 +381,43 @@ nav #menu a:hover {
 }
 
 .Brødkrummesti {
-    display: block;
-    margin: 25px 5%;
+    display: flex;
     font-size: 14px;
+    margin: 20px;
 }
 
-.hovedindhold-img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-}
+.Kontakt h1 {
+    color: #22333B;
+    text-align: center;
+    padding: 0px 10px;
+    margin: 10px;
+    flex-direction: column;
+    font-size: 1.5em;
+    font-weight: 600;
+} 
 
-/* KONTAKTFORMULAR */
+/*Kontaktform - hentet fra Nadias undervisning*/
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    max-width: 1400px;
+    margin: 0 10px;
+    padding: 0 10px;
+}
 
 input[type=text], input[type=email],input[type=tel], select, textarea { /*vælger de emner/typer som skal berøres af nedenstående css*/
-  width: 100%;
-  padding: 1em;
-  border: 1px solid #ccc;
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #22333B;
   border-radius: 4px;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-family: sans-serif;
 }
-/*Styling af dropdown*/
+
 select{
 	padding: 0.675em 6em 0.675em 1em;
 	appearance: none;
@@ -446,67 +441,95 @@ select{
 .custom-select::before {
   border-left: var(--size) solid transparent;
   border-right: var(--size) solid transparent;
-  border-bottom: var(--size) solid black;
+  border-bottom: var(--size) solid #20343B;
   top: 48%;
 }
 
 .custom-select::after {
   border-left: var(--size) solid transparent;
   border-right: var(--size) solid transparent;
-  border-top: var(--size) solid black;
+  border-top: var(--size) solid #20343B;
   top: 63%;
 }
 
 input[type=submit] {
   background-color: #DD7824;
-  color: white;
-  padding: 0.8em 1.5em;
+  color: #EAE0D5;
+  padding: 1em;
   border: none;
   border-radius: 4px;
-  width:100%;
-  margin-top: 1em;
+  width: 40.5%;
+  margin: 10px;
   font-size: 18px;
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  background-color: #C16010;
-  transition: 0.5s;
- 
-}
-
-input[type=checkbox]{
-	margin: 0.8em 0;
-	cursor: pointer;
-}
-
-.checkbox{ /*margin på fieldset med class checkbox*/
-	margin: 0.8em 0;
+.checkbox{ 
+	margin: 0;
 }
 
 input[type=radio]{
 	cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
-fieldset{
-	border-color: #DD7824;
-	border-style: dotted; /* Kontrollerer stregen rundt om fieldset - kan fjernes ved at bruge 'hidden'*/
-}
-
-::placeholder{ /*Tager fat i placeholder-tekst i inputfeltet*/
-	color:#333;
+::placeholder{ 
+	color:#20343B;
 }
 
 .kontaktform {
   border-radius: 5px;
-  background-color: #c5c5c5;
-  padding: 1.3em;
-  width: 50%;
-  margin: 0 auto; /*Centrerer elementet på siden*/
+  box-sizing: border-box;
+  background-color: #EAE0D5;
+  color: #20343B;
+  padding: 4em 5em;
+  width: 100%;
+  padding: 2em; 
+  margin: 2% 10% 0% 10%;
+
+}
+
+.kontaktform label {
+  background-color: #EAE0D5;
+  display: block;
+  color: #20343B;
+  padding: 0.8em;
+  border-radius: 4px;
+  width: 60%;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.kontaktform input[type="text"],
+.kontaktform input[type="email"],
+.kontaktform input[type="tel"],
+.kontaktform textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Kontakt .tekst-til-højre {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.Kontakt .tekst-til-højre h2 {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.Kontakt .tekst-til-højre img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 /*Andre style elementer*/
-
 .visually-hidden{ /*WCAG defineret class som fjerner element fra skærm, men som stadig kan læses af skærmlæseren*/
 	border: 0;
 	clip: rect(0 0 0 0);
@@ -581,5 +604,4 @@ fieldset{
     text-align: center;
     font-size: 14px;
 }
-
 }
